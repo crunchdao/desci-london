@@ -1,4 +1,4 @@
-This is a broad framework for the following technical session. If you have questions, you can reach me on (in order of responsiveness) [Discord](matteoettam09#9362), [LinkedIn](https://www.linkedin.com/in/matteomanzi00seinfeldwasright/), [email](matteo.manzi@crunchdao.com). Please schedule a call selecting one slot from [this link](https://calendly.com/matteoettam09/coffee-with-matteo-crunchdao).
+This is a broad framework for the following technical session. If you have questions, you can reach me on (in order of responsiveness) [Discord](matteoettam09#9362), [LinkedIn](https://www.linkedin.com/in/matteomanzi00seinfeldwasright/), [email](matteo.manzi@crunchdao.com). Please schedule a call selecting one slot from [this link](https://calendar.app.google/6mXfQWU24Y2tga6R6).
 
 # Dimensionality Reduction
 
