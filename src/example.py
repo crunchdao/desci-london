@@ -22,4 +22,4 @@ for l in x0_list:
     plt.plot(list0)
 
 plt.grid()
-plt.savefig('./figures/collatz.png')
+plt.savefig('../paper/figures/collatz.png')

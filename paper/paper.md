@@ -9,7 +9,7 @@ titlepage: true
 titlepage-text-color: "FFFFFF"
 titlepage-rule-color: "360049"
 titlepage-rule-height: 0
-titlepage-background: "../figures/cover.pdf"
+titlepage-background: "./figures/cover.pdf"
 header-left: "\\hspace{1cm}"
 header-right: "Page \\thepage"
 footer-left: "Data Science Problems and Hidden Discrete Dynamical Systems"
@@ -49,6 +49,6 @@ After the state propagation, we compute an analytical function of the final stat
 
 Prove the Collatz conjecture:
 
-![Prove the Collatz conjecture.](../figures/collatz.png)
+![Prove the Collatz conjecture.](./figures/collatz.png)
 
 # References
