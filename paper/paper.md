@@ -31,6 +31,8 @@ You can use backpropagation to train your model against the post-optimizer fitne
 
 ## Bonus Problem
 
+Award for this problem: 1M dollar. Good luck
+
 ![Prove the Collatz conjecture.](./figures/collatz.png)
 
 # References
