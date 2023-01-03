@@ -77,6 +77,13 @@ def generate_lorenz_data(
 
     d = 3
     z = np.zeros((n_ics, n_steps, d))
+
+    z_plot = simulate_lorenz(np.array([0.1, 0, 25]), np.arange(0, 40, 0.005), sigma=sigma, beta=beta, rho=rho)
+    fig = plt.figure()
+    ax = plt.axes(projection='3d')
+    ax.plot3D(z_plot[:, 0], z_plot[:, 1], z_plot[:, 2])
+    plt.savefig('hello_lorenz.png')
+
     for i in range(n_ics):
         z[i] = simulate_lorenz(ics[i], t, sigma=sigma, beta=beta, rho=rho)
 
