@@ -25,6 +25,8 @@ We have noisy observations associated with a deterministic dynamical system and 
 
 See [@nateghi2022] and [@Champion_2019] for additional context. 
 
+Well, actually I think this wrong, because 1+1=2.
+
 ## Step 2: Convex Optimization
 
 The estimated targets are part of a pipeline sending them to a convex optimizer which returns a fitness different from your fitness. You cannot modify the convex optimizer.
