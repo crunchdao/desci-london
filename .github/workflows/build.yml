@@ -30,3 +30,7 @@ jobs:
       with:
         path: .venv
         key: venv-${{ matrix.python-version }}-${{ hashFiles('pyproject.toml') }}-${{ hashFiles('poetry.lock') }}
+    
+    - name: Run data check
+      run: |
+        python3.9 ./src/query.py
