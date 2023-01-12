@@ -23,4 +23,4 @@ jobs:
         python-version: ${{ matrix.python-version }}
 
     - name: Check if data are correct
-      run: python3.9 query.py
+      run: python3.9 ../src/query.py
