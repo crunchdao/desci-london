@@ -132,7 +132,12 @@ import pandas as pd
 df = pd.DataFrame(features)
 df.columns = df.columns.astype(str)
 df.to_parquet('features.parquet')
+# Loaded to ipfs:
+# QmPuAmU4cRWKmJZcQ6SBBhGRiCvq3fmQ64ujPHEJFrE1Mw
 
 df = pd.DataFrame(target)
 df.columns = df.columns.astype(str)
 df.to_parquet('target.parquet')
+
+# Loaded to ipfs:
+# QmTBdkekrUFAFtTv9LwGrsiMTriMztqQyofiEdtYsswBBm
