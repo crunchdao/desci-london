@@ -29,5 +29,6 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          ipfs cat /ipfs/QmTBdkekrUFAFtTv9LwGrsiMTriMztqQyofiEdtYsswBBm 
-          ipfs cat /ipfs/QmPuAmU4cRWKmJZcQ6SBBhGRiCvq3fmQ64ujPHEJFrE1Mw
+          ipfs cat /ipfs/QmTBdkekrUFAFtTv9LwGrsiMTriMztqQyofiEdtYsswBBm > ./data/target.parquet
+          ipfs cat /ipfs/QmPuAmU4cRWKmJZcQ6SBBhGRiCvq3fmQ64ujPHEJFrE1Mw > ./data/features.parquet
+
