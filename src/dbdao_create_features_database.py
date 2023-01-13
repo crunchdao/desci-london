@@ -3,11 +3,6 @@ import json
 import pandas as pd
 
 X = pd.read_parquet('features.parquet')
-print(X.shape)
-print(type(X.iloc[0, 0]))
-
-# y = pd.read_parquet('target.parquet')
-# print(y)
 
 query = '''mutation Mutation($owner: String!, $schema: JSON, $uiSchema: JSON) {
   createDatabase(owner: $owner, schema: $schema, uiSchema: $uiSchema) {
@@ -28,14 +23,10 @@ for col in columns:
       }
 
 schema = {
-  "title": "Test form",
-  "description":"Test description",
+  "title": "Feature Dataframe",
+  "description":"DeSci London Hackaton experimentation.",
   "type": "object",
-  "properties": schema_cols,
-  "required":[
-    "nameInput",
-    "ageInput"
-  ]
+  "properties": schema_cols
 }
 
 
@@ -50,6 +41,3 @@ r = requests.post(url, json={'query': query, "variables": variables})
 json_data = json.loads(r.text)
 
 print(json_data)
-# df_data = json_data["data"]["databases"]
-# df = pd.DataFrame(df_data)
-# print(df)

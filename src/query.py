@@ -6,23 +6,7 @@ import numpy as np
 
 query = '''query Databases($databaseId: String!) {
   database(databaseId: $databaseId) {
-    databaseId
-    databaseIdNft
-    hash
-    owner
-    cid
-    createdAt
-    updatedAt
-    schema
-    uiSchema
     rows {
-      rowId
-      rowIdNft
-      cid
-      owner
-      hash
-      createdAt
-      updatedAt
       formData
     }
   }
@@ -35,14 +19,15 @@ variables = {
 url = "https://dbdao.xyz/api/graphql"
 r = requests.post(url, json={'query': query, "variables": variables})
 json_data = json.loads(r.text)
-
+print(json_data)
 df_data = json_data["data"]["database"]["rows"]
+# print(df_data)
 df = pd.DataFrame(df_data)
+# print(df)
 df = df.iloc[-1, :]['formData']
 # print(df)
 df = pd.DataFrame.from_dict(df, orient='index').T
 # print(df)
-
 output = np.linalg.norm(df)
-
+# print(output)
 assert(output < 5)
