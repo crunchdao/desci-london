@@ -82,7 +82,7 @@ def generate_lorenz_data(
     fig = plt.figure()
     ax = plt.axes(projection='3d')
     ax.plot3D(z_plot[:, 0], z_plot[:, 1], z_plot[:, 2])
-    plt.savefig('hello_lorenz.png')
+    plt.savefig('../data/hello_lorenz.png')
 
     for i in range(n_ics):
         z[i] = simulate_lorenz(ics[i], t, sigma=sigma, beta=beta, rho=rho)
