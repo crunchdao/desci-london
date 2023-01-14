@@ -4,6 +4,10 @@ import pandas as pd
 
 X = pd.read_parquet('features.parquet')
 
+test = 
+
+1/0
+
 query = '''mutation Mutation($owner: String!, $databaseId: String!, $formData: JSON) {
   createRow(
     owner: $owner, 
@@ -22,19 +26,17 @@ query = '''mutation Mutation($owner: String!, $databaseId: String!, $formData: J
 }'''
 
 columns = X.columns
-for j in range(X.shape[0]):
-  print(j/X.shape[0])
-  input = X.iloc[j, :]
+input = X.head(2)
 
-  form_data = {}
-  for i in range(len(columns)):
-      form_data[f'feature_{columns[i]}'] = input[i]
+form_data = {}
+for i in range(len(columns)):
+  form_data[f'feature_{columns[i]}'] = input[i]
 
-  variables = {
-    "owner": "0xFFce501C47FE475954bE6a318740e0793089004F",
-    "formData": form_data,
-    "databaseId": "c2e1e9a4-3d07-4e61-b478-a7013d20ffcd"
-  }
+variables = {
+"owner": "0xFFce501C47FE475954bE6a318740e0793089004F",
+"formData": form_data,
+"databaseId": "c2e1e9a4-3d07-4e61-b478-a7013d20ffcd"
+}
 
-  url = "https://dbdao.xyz/api/graphql"
-  r = requests.post(url, json={'query': query, "variables": variables})
+url = "https://dbdao.xyz/api/graphql"
+r = requests.post(url, json={'query': query, "variables": variables})
