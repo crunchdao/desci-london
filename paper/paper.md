@@ -36,4 +36,6 @@ This enables incremental works: assume one is interested in making use of the tr
 
 Following the methodology discussed in [@ManziPisaJulia], it is possible to use the tools of chaos theory in order to investigate the existance of coherent structures in the underlying dynamical system [@FROYLAND20091507]. As we are interested in exploring bifucating phenomena of such structures in a two-dimensional space, an animation can be used to do this. The use of IPFS enables the integration of multimedia contents like [this](https://gateway.crunchdao.com/ipfs/QmRPq1NZWCsTgrfZNVQpFohbgk2hvxGZE6oV6fexeqK5Px) or [this](https://gateway.crunchdao.com/ipfs/QmfHvrhiKam8Q9b46qTBtexsu8BpTdMsUpKL6AhEXtc3AD) in this work, accessible both from the paper and from the source code.
 
+# Enjoy DeSci London!
+
 # References
