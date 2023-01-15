@@ -1,5 +1,5 @@
 ---
-title: "Data Science Problems and Hidden Discrete Dynamical Systems"
+title: "Data Science Problems and Hidden Dynamical Systems"
 subtitle: "DESCI LONDON HACKATHON"
 author: [Matteo Manzi, Enzo Caceres]
 date: "2023/01/02"
@@ -12,12 +12,12 @@ titlepage-rule-height: 0
 titlepage-background: "./figures/cover.pdf"
 header-left: "\\hspace{1cm}"
 header-right: "Page \\thepage"
-footer-left: "Data Science Problems and Hidden Discrete Dynamical Systems"
+footer-left: "Data Science Problems and Hidden Dynamical Systems"
 footer-right: "DESCI LONDON HACKATHON"
-abstract: "DeSci London Hackathon is a hackathon event taking place on the 12th and 13th of January 2023. This hack is aimed at anyone interested in DeSci. The event will have two tracks – code and no-code. All submissions will be open source."
+abstract: "DeSci London Hackathon is a hackathon event taking place on the 12th and 13th of January 2023. This hack is aimed at anyone interested in DeSci."
 ---
 
-## Step 1: Machine Learning: Supervised Learning
+## 1. Machine Learning and Dynamical Systems: Supervised Learning
 
 We have noisy observations associated with a deterministic dynamical system and we are interested in best fitting, in some sense, these high-dimensional observations with a target scalar observation, related to the same system.
 
@@ -25,24 +25,16 @@ We have noisy observations associated with a deterministic dynamical system and 
 
 See [@nateghi2022] and [@Champion_2019] for additional context. 
 
-## Step 2: Convex Optimization
+## 2. Convex Optimization
 
 The estimated targets are part of a pipeline sending them to a convex optimizer which returns a fitness different from your fitness. You cannot modify the convex optimizer.
 
 See [@cvxpy] for additional context.
 
-## Step 3 Convex Optimizer-in-the-loop backpropagation
+## 3. Chaos
 
-You can use backpropagation to train your model against the post-optimizer fitness.
+Following the methodology discussed in https://desci.crunchdao.com/projects/unipi/stochastic-chaos BIBITEM missing, it is possible to use the tools of chaos theory in order to investigate the existance of coherent structures in the underlying dynamical system FROYLAND BIBITEM MISSING HERE.
 
-See [@cvxpylayer] for additional context.
-
-## Bonus Problem
-
-Award for this problem: 1M dollars. Good luck.
-
-![Prove the Collatz conjecture.](./figures/collatz.png)
-
-See [@terrencetao] for additional context.
+In particular, the use of IPFS enables the integration of [multimedia contents](https://gateway.crunchdao.com/ipfs/QmRPq1NZWCsTgrfZNVQpFohbgk2hvxGZE6oV6fexeqK5Px) in this work, accessible both from the paper and from the source code.
 
 # References
